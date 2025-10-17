@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gobi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+      <div class="container">
+          <a href="#" class="logo">Gobi</a>
+          <ul class="nav-links">
+            <li><a href="#projects" class="link-hover">Projects</a></li>
+            <li><a href="#skills" class="link-hover">Skills</a></li>
+            <li><a href="#achievements" class="link-hover">Achievements</a></li>
+            <li><a href="#contact" class="link-hover">Contact</a></li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn link-hover"
+            aria-label="Toggle theme"
+          >
+            <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
+          </button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-pic-container hidden">
+            <img
+              src="assets/profile.jpg"
+              alt="Gobi's Profile Picture"
+              class="profile-pic"
+            />
+          </div>
+          <h1 class="hidden">Electronics Engineer &</h1>
+          <h1 class="headline"><span id="typed-headline"></span></h1>
+          <p class="hidden">
+            Failure is just feedback from the universe, guiding you towards
+            greater achievements.
+          </p>
+          <div class="social-links hidden">
+            <a
+              href="https://www.linkedin.com/in/gobinathlp"
+              target="_blank"
+              class="link-hover"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/gobinathlp5"
+              target="_blank"
+              class="link-hover"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://youtube.com/@gobinathlp?si=yyx71FWArLBPiECi"
+              target="_blank"
+              class="link-hover"
+              aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <a href="#projects" class="btn link-hover hidden">My Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="hidden">Projects</h2>
+        <div class="project-grid">
+          <div class="project-card hidden link-hover">
+            <img
+              src="assets/can-bus.jpg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3>Controlled Area Network</h3>
+              <p>
+                Communicates humidity sensor data between two Arduino boards
+                using MCP2515 CAN transceivers.Arduino UNO, MCP2515, Humidity
+                Sensor, I2C LCD are used.
+              </p>
+            </div>
+          </div>
+          <div class="project-card hidden link-hover">
+            <img
+              src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&q=80&w=800"
+              alt="Project 2"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3>Project Two Title</h3>
+              <p>
+                A brief description of the project, the technologies used (Vue,
+                Firebase), and the problem it solves.
+              </p>
+            </div>
+          </div>
+          <div class="project-card hidden link-hover">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&q=80&w=800"
+              alt="Project 3"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3>Project Three Title</h3>
+              <p>
+                A brief description of the project, the technologies used (HTML,
+                CSS, JS), and the problem it solves.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="hidden">Core Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"
+              ></path>
+              <path
+                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"
+              ></path>
+            </svg>
+            <span>Embbeded Systems</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="2"></circle>
+              <path
+                d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"
+              ></path>
+            </svg>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8c0 2 .8 3.8 2.1 5.1L4 22l5.1-2.1c1.3.8 2.9 1.3 4.9 1.3s5.6-1.6 5.6-1.6z"
+              ></path>
+            </svg>
+            <span>Java</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>HTML5 & CSS3</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>C & C++</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"></path>
+              <path d="M12 3a9 9 0 0 0 0 18v-9"></path>
+            </svg>
+            <span>Python</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            <span>Embbeded C</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 10c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zM6 4c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+              ></path>
+              <path
+                d="M6 14c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+              ></path>
+              <path d="M6 7v7"></path>
+              <path d="m15 13-3-3"></path>
+              <path d="m9 10 3 3"></path>
+            </svg>
+            <span>Git & GitHub</span>
+          </div>
+          <div class="skill-item hidden link-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 12v-2a3 3 0 0 0-3-3H7"></path>
+              <path d="M12 12h2a3 3 0 0 0 3-3V7"></path>
+              <path d="M12 12v2a3 3 0 0 1-3 3H7"></path>
+              <path d="M12 12h2a3 3 0 0 1 3 3v2"></path>
+            </svg>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="achievements">
+      <div class="container">
+        <h2 class="hidden">Achievements</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card hidden link-hover">
+            <div class="achievement-icon">🏆</div>
+            <h3>First Place Hackathon</h3>
+            <p>
+              Won the top prize at the DAKSHA-T25 Coding and debugging event
+              conducted by KSR College Of Engineering And Technology
+            </p>
+          </div>
+          <div class="achievement-card hidden link-hover">
+            <div class="achievement-icon">📜</div>
+            <h3>Published Research Paper</h3>
+            <p>
+              Co-authored a paper on efficient power management in embedded
+              systems, published in the IEEE journal.
+            </p>
+          </div>
+          <div class="achievement-card hidden link-hover">
+            <div class="achievement-icon">⭐</div>
+            <h3>Top Project Award</h3>
+            <p>
+              Received the 'Best Final Year Project' award for developing a
+              low-cost, portable medical diagnostic tool.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="hidden">Let's Connect</h2>
+          <p class="hidden">
+            Have a project in mind or just want to say hello? My inbox is always
+            open. I'll get back to you as soon as possible!
+          </p>
+          <a href="mailto:gopinathlp720@gmail.com" class="btn link-hover hidden"
+            >Send a Message</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+91 8072396168</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Erode, India</span>
+        </div>
+      </div>
+      <p>&copy; 2025 Gobi. Crafted with care❤️...!</p>
+    </footer>
+    <a
+      href="#"
+      class="back-to-top-btn link-hover"
+      id="back-to-top-btn"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

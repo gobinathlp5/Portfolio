@@ -67,16 +67,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add click event listener to the toggle button
     themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
     });
     
-    // --- 5. Proximity Card Hover Effect ---
-    const grids = document.querySelectorAll('.project-grid, .achievements-grid');
+    // --- 5. Mobile Navigation Logic ---
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerIcon = hamburgerMenu.querySelector('i');
+    const navLinksList = navLinks.querySelectorAll('a');
+
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const isActive = navLinks.classList.contains('active');
+        hamburgerIcon.classList.toggle('fa-xmark', isActive);
+        hamburgerIcon.classList.toggle('fa-bars', !isActive);
+    });
+
+    // Close menu when a link is clicked
+    navLinksList.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                hamburgerIcon.classList.remove('fa-xmark');
+                hamburgerIcon.classList.add('fa-bars');
+            }
+        });
+    });
+
+    // --- 6. Proximity Card Hover Effect ---
+    const grids = document.querySelectorAll('.project-grid, .achievements-grid, .soft-skills-grid, .skills-categories');
     grids.forEach(grid => {
         grid.addEventListener('mousemove', e => {
-            const cards = grid.querySelectorAll('.project-card, .achievement-card');
+            const cards = grid.querySelectorAll('.project-card, .achievement-card, .soft-skill-card, .skill-category');
             cards.forEach(card => {
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;
@@ -87,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- 6. Back to Top Button Logic ---
+    // --- 7. Back to Top Button Logic ---
     const backToTopBtn = document.getElementById('back-to-top-btn');
 
     window.addEventListener('scroll', () => {
@@ -100,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// --- 7. Preloader Logic ---
+// --- 8. Preloader Logic ---
 // This runs when the entire page is fully loaded, including images and stylesheets.
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');

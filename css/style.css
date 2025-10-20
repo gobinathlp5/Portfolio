@@ -554,6 +554,14 @@ footer {
     z-index: 0;
 }
 
+.project-card > *,
+.achievement-card > *,
+.skill-category-card > *,
+.soft-skill-card > * {
+    position: relative;
+    z-index: 2;
+}
+
 .project-grid:hover .project-card::before,
 .achievements-grid:hover .achievement-card::before,
 .soft-skills-grid:hover .soft-skill-card::before,

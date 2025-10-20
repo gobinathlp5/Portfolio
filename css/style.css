@@ -645,6 +645,11 @@ footer {
         white-space: normal;
     }
 
+    .hero-buttons .btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;

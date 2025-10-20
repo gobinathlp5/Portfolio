@@ -208,10 +208,13 @@ html[data-theme='dark'] .navbar {
 }
 
 .nav-links {
+    position: absolute;
     display: flex;
     list-style: none;
     gap: 2.5rem;
     align-items: center;
+    width: auto;
+    left: 30%;
 }
 
 .nav-links a {

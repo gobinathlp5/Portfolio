@@ -151,6 +151,76 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * Initializes the project filtering functionality.
+     */
+    function initProjectFilter() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        if (!filterBtns.length || !projectCards.length) return;
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filterValue === 'all' || filterValue === category) {
+                        card.style.display = 'block';
+                        // Small timeout to allow display:block to apply before opacity transition if needed
+                        setTimeout(() => card.classList.remove('hidden'), 10);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    /**
+     * Initializes the scroll spy to highlight active navigation links.
+     */
+    function initScrollSpy() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollPosition = window.scrollY + 100; // Offset for fixed header
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    }
+
+    /**
+     * Sets the current year in the footer.
+     */
+    function initDynamicYear() {
+        const yearSpan = document.getElementById('copyright-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    }
+
     // Initialize all functionalities
     initCursor();
     initTyped();
@@ -159,6 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initProximityHover();
     initBackToTopButton();
+    initProjectFilter();
+    initScrollSpy();
+    initDynamicYear();
 });
 
 // Run preloader logic after all page content (images, etc.) is loaded.

@@ -25,7 +25,7 @@
 
     <nav class="navbar">
       <div class="container">
-        <a href="#" class="logo">Gobi</a>
+        <a href="#" class="logo">Gobi ⚡</a>
         <ul class="nav-links">
           <li><a href="#projects" class="link-hover">Projects</a></li>
           <li>
@@ -107,8 +107,18 @@
       <section id="projects">
         <div class="container">
           <h2 class="hidden">Projects</h2>
+          <div class="filter-buttons hidden">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="embedded">
+              Embedded/IoT
+            </button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+          </div>
           <div class="project-grid">
-            <div class="project-card hidden link-hover">
+            <div
+              class="project-card hidden link-hover"
+              data-category="embedded"
+            >
               <img
                 src="assets/can-bus.jpg"
                 alt="Project 1"
@@ -124,7 +134,7 @@
                 </p>
               </div>
             </div>
-            <div class="project-card hidden link-hover">
+            <div class="project-card hidden link-hover" data-category="web">
               <img
                 src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&q=80&w=800"
                 alt="Project 2"
@@ -139,7 +149,7 @@
                 </p>
               </div>
             </div>
-            <div class="project-card hidden link-hover">
+            <div class="project-card hidden link-hover" data-category="web">
               <img
                 src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&q=80&w=800"
                 alt="Project 3"
@@ -391,7 +401,10 @@
             <span>Erode, India</span>
           </div>
         </div>
-        <p>&copy; 2025 Gobi. Crafted with care❤️...!</p>
+        <p>
+          &copy; <span id="copyright-year">2025</span> Gobi. Crafted with
+          care❤️...!
+        </p>
       </div>
     </footer>
     <a

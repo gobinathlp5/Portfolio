@@ -208,13 +208,11 @@ html[data-theme='dark'] .navbar {
 }
 
 .nav-links {
-    position: absolute;
     display: flex;
     list-style: none;
     gap: 2.5rem;
     align-items: center;
     width: auto;
-    left: 30%;
 }
 
 .nav-links a {
@@ -266,6 +264,7 @@ html[data-theme='dark'] .navbar {
     text-align: center;
     position: relative;
     z-index: 1;
+    align-items: center;
 }
 
 .hero-content {
@@ -345,7 +344,7 @@ html[data-theme='dark'] .navbar {
 /* =================================================== */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 

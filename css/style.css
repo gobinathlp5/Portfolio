@@ -183,7 +183,7 @@ h2::after {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(248, 249, 250, 0.8);
+    background: rgba(248, 249, 250, 0.5);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     transition: background-color 0.3s, border-color 0.3s;
@@ -194,7 +194,7 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar .container {
-    height: 4.5rem;
+    height: 4.0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

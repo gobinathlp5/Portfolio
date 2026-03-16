@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -68,8 +68,8 @@
             <h1 class="hidden">Electronics Engineer &</h1>
             <h1 class="headline"><span id="typed-headline"></span></h1>
             <p class="hidden">
-              Failure is just feedback from the universe, guiding you towards
-              greater achievements.
+              ECE undergraduate focused on VLSI design, embedded systems,
+              communication protocols, and hardware-security integration.
             </p>
             <div class="social-links hidden">
               <a
@@ -113,44 +113,107 @@
               Embedded/IoT
             </button>
             <button class="filter-btn" data-filter="web">Web Dev</button>
-            <button class="filter-btn" data-filter="security">
-              Security
-            </button>
+            <button class="filter-btn" data-filter="security">Security</button>
           </div>
           <div class="project-grid">
-
             <!-- Project 1: CAN Bus -->
-            <div class="project-card hidden link-hover" data-category="embedded">
+            <div
+              class="project-card hidden link-hover"
+              data-category="embedded"
+            >
               <img
                 src="assets/can-bus.jpg"
                 alt="CAN Bus Humidity Monitoring"
                 class="project-image"
                 loading="lazy"
-                onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80'"
+                onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80'
+                "
               />
               <div class="project-info">
                 <h3>CAN Bus Humidity Monitoring System</h3>
                 <p>
-                  Transmits real-time DHT22 humidity &amp; temperature data between two Arduino UNOs
-                  via MCP2515 CAN transceivers, displayed on an I2C LCD — simulating automotive
-                  sensor communication.
+                  Transmits real-time DHT22 humidity &amp; temperature data
+                  between two Arduino UNOs via MCP2515 CAN transceivers,
+                  displayed on an I2C LCD — simulating automotive sensor
+                  communication.
                 </p>
-                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Arduino</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">MCP2515</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">CAN Bus</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">DHT22</span>
+                <div
+                  style="
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Arduino</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >MCP2515</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >CAN Bus</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >DHT22</span
+                  >
                 </div>
-                <a href="https://github.com/gobinathlp5/Can-Bus-Humidity-Monitoring-System"
-                   target="_blank"
-                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                <a
+                  href="https://github.com/gobinathlp5/Can-Bus-Humidity-Monitoring-System"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                >
                   <i class="fa-brands fa-github"></i> View on GitHub
                 </a>
               </div>
             </div>
 
             <!-- Project 2: Blockchain IoT -->
-            <div class="project-card hidden link-hover" data-category="security">
+            <div
+              class="project-card hidden link-hover"
+              data-category="security"
+            >
               <img
                 src="https://images.unsplash.com/photo-1639762681057-408e52192e55?w=800&q=80"
                 alt="Blockchain IoT Security"
@@ -160,19 +223,75 @@
               <div class="project-info">
                 <h3>Blockchain-Enabled Zero-Trust IoT Security</h3>
                 <p>
-                  Implements Zero Trust Architecture and a SHA-256 hash-chain ledger on a single
-                  ESP32 for smart city sensor data, using HMAC-SHA256 authentication to secure
-                  IoT infrastructure.
+                  Implements Zero Trust Architecture and a SHA-256 hash-chain
+                  ledger on a single ESP32 for smart city sensor data, using
+                  HMAC-SHA256 authentication to secure IoT infrastructure.
                 </p>
-                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">ESP32</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Blockchain</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">HMAC-SHA256</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Zero Trust</span>
+                <div
+                  style="
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >ESP32</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Blockchain</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >HMAC-SHA256</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Zero Trust</span
+                  >
                 </div>
-                <a href="https://github.com/gobinathlp5/Blockchain-Enabled-Zero-Trust-Security-Framework-for-Smart-City-IoT-Infrastructure"
-                   target="_blank"
-                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                <a
+                  href="https://github.com/gobinathlp5/Blockchain-Enabled-Zero-Trust-Security-Framework-for-Smart-City-IoT-Infrastructure"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                >
                   <i class="fa-brands fa-github"></i> View on GitHub
                 </a>
               </div>
@@ -189,54 +308,235 @@
               <div class="project-info">
                 <h3>Equira — Civic Tech Platform</h3>
                 <p>
-                  A full-stack web platform improving access to government welfare schemes and
-                  healthcare for underserved communities in India, built with HTML, CSS, JavaScript,
-                  Python, and MongoDB.
+                  A full-stack web platform improving access to government
+                  welfare schemes and healthcare for underserved communities in
+                  India, built with HTML, CSS, JavaScript, Python, and MongoDB.
                 </p>
-                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Python</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">MongoDB</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">HTML/CSS/JS</span>
+                <div
+                  style="
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Python</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >MongoDB</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >HTML/CSS/JS</span
+                  >
                 </div>
-                <a href="https://github.com/gobinathlp5/Equira"
-                   target="_blank"
-                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                <a
+                  href="https://github.com/gobinathlp5/Equira"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                >
                   <i class="fa-brands fa-github"></i> View on GitHub
                 </a>
               </div>
             </div>
 
-            <!-- Project 4: IoT Mining Project -->
-            <div class="project-card hidden link-hover" data-category="embedded">
+            <!-- Project 4: HardenX -->
+            <div
+              class="project-card hidden link-hover"
+              data-category="embedded"
+            >
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
-                alt="IoT Mining Project"
+                src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?w=800&q=80"
+                alt="HardenX Security Hardening Tool"
                 class="project-image"
                 loading="lazy"
               />
               <div class="project-info">
-                <h3>IoT Mining Safety System</h3>
+                <h3>HardenX — System Security Hardening Tool</h3>
                 <p>
-                  An IoT-based safety and monitoring system designed for mining environments,
-                  enabling real-time hazard detection and remote monitoring using embedded
-                  sensors and wireless communication.
+                  An automated hardening and compliance framework for Windows
+                  and Linux, designed to detect weak configurations and apply
+                  auditable, reversible security baselines with embedded
+                  deployment in mind.
                 </p>
-                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">IoT</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Embedded C</span>
-                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Sensors</span>
+                <div
+                  style="
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Python</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >C</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Windows/Linux</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >IoT Security</span
+                  >
                 </div>
-                <a href="https://github.com/gobinathlp5/IoT-Mining-Project"
-                   target="_blank"
-                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                <a
+                  href="https://github.com/Dineshram-06/HardenX_Final"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                >
                   <i class="fa-brands fa-github"></i> View on GitHub
                 </a>
               </div>
             </div>
 
             <!-- Project 5: Fibonacci Module (FPGA/Verilog) -->
-           
-
+            <div
+              class="project-card hidden link-hover"
+              data-category="security"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?w=800&q=80"
+                alt="x86 Assembly Programs"
+                class="project-image"
+                loading="lazy"
+              />
+              <div class="project-info">
+                <h3>x86 Assembly Programs</h3>
+                <p>
+                  A collection of NASM-based low-level programs exploring
+                  register-level computation, stack and memory operations, and
+                  system-call fundamentals useful for reverse engineering and
+                  firmware analysis.
+                </p>
+                <div
+                  style="
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                  "
+                >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >x86 Assembly</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >NASM</span
+                  >
+                  <span
+                    style="
+                      background: var(--primary-color);
+                      color: #fff;
+                      padding: 2px 10px;
+                      border-radius: 50px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                    "
+                    >Low-Level Systems</span
+                  >
+                </div>
+                <a
+                  href="https://github.com/gobinathlp5"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                >
+                  <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -251,31 +551,51 @@
               <div class="skill-item">
                 <span class="skill-item-name">Embedded C</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Arduino</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-item-name">Raspberry Pi & IoT</span>
+                <span class="skill-item-name">ESP32 & IoT</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-item-name">PCB Design</span>
+                <span class="skill-item-name">VLSI & RTL Design</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-item-name">CAN Bus</span>
+                <span class="skill-item-name">CAN, UART, I2C, SPI</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -286,48 +606,76 @@
               <div class="skill-item">
                 <span class="skill-item-name">C/C++</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Python</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">JavaScript</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Verilog HDL</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
 
             <!-- Web & Tools Category -->
             <div class="skill-category-card">
-              <h3>Web & Tools</h3>
+              <h3>Web & EDA Tools</h3>
               <div class="skill-item">
                 <span class="skill-item-name">HTML & CSS</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Git & GitHub</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-item-name">MongoDB</span>
+                <span class="skill-item-name">Cadence & LTspice</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -344,25 +692,41 @@
               <div class="skill-item">
                 <span class="skill-item-name">Team Collaboration</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Problem Solving</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Communication</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Adaptability</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -376,26 +740,26 @@
           <div class="achievements-grid">
             <div class="achievement-card hidden link-hover">
               <div class="achievement-icon">🏆</div>
-              <h3>First Place Hackathon</h3>
+              <h3>Smart India Hackathon Participant</h3>
               <p>
-                Won the top prize at the DAKSHA-T25 Coding and Debugging event
-                conducted by KSR College of Engineering and Technology.
+                Participated in Smart India Hackathon and worked on practical,
+                impact-driven engineering problem solving in a team setting.
               </p>
             </div>
             <div class="achievement-card hidden link-hover">
               <div class="achievement-icon">📜</div>
-              <h3>Published Research Paper</h3>
+              <h3>RTL Design & Verification Workshop</h3>
               <p>
-                Co-authored a paper on efficient power management in embedded
-                systems, published in the IEEE journal.
+                Completed hands-on training in RTL design and verification
+                workflows for digital hardware development.
               </p>
             </div>
             <div class="achievement-card hidden link-hover">
               <div class="achievement-icon">⭐</div>
-              <h3>Top Project Award</h3>
+              <h3>ARM Cortex-M4 Masterclass & IEEE Member</h3>
               <p>
-                Received the 'Best Final Year Project' award for developing a
-                low-cost, portable medical diagnostic tool.
+                Completed advanced embedded architecture training and joined
+                IEEE student membership for continuous technical growth.
               </p>
             </div>
           </div>

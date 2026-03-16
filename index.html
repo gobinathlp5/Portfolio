@@ -113,57 +113,130 @@
               Embedded/IoT
             </button>
             <button class="filter-btn" data-filter="web">Web Dev</button>
+            <button class="filter-btn" data-filter="security">
+              Security
+            </button>
           </div>
           <div class="project-grid">
-            <div
-              class="project-card hidden link-hover"
-              data-category="embedded"
-            >
+
+            <!-- Project 1: CAN Bus -->
+            <div class="project-card hidden link-hover" data-category="embedded">
               <img
                 src="assets/can-bus.jpg"
-                alt="Project 1"
+                alt="CAN Bus Humidity Monitoring"
+                class="project-image"
+                loading="lazy"
+                onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80'"
+              />
+              <div class="project-info">
+                <h3>CAN Bus Humidity Monitoring System</h3>
+                <p>
+                  Transmits real-time DHT22 humidity &amp; temperature data between two Arduino UNOs
+                  via MCP2515 CAN transceivers, displayed on an I2C LCD — simulating automotive
+                  sensor communication.
+                </p>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Arduino</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">MCP2515</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">CAN Bus</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">DHT22</span>
+                </div>
+                <a href="https://github.com/gobinathlp5/Can-Bus-Humidity-Monitoring-System"
+                   target="_blank"
+                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                  <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2: Blockchain IoT -->
+            <div class="project-card hidden link-hover" data-category="security">
+              <img
+                src="https://images.unsplash.com/photo-1639762681057-408e52192e55?w=800&q=80"
+                alt="Blockchain IoT Security"
                 class="project-image"
                 loading="lazy"
               />
               <div class="project-info">
-                <h3>Controlled Area Network</h3>
+                <h3>Blockchain-Enabled Zero-Trust IoT Security</h3>
                 <p>
-                  Communicates humidity sensor data between two Arduino boards
-                  using MCP2515 CAN transceivers.Arduino UNO, MCP2515, Humidity
-                  Sensor, I2C LCD are used.
+                  Implements Zero Trust Architecture and a SHA-256 hash-chain ledger on a single
+                  ESP32 for smart city sensor data, using HMAC-SHA256 authentication to secure
+                  IoT infrastructure.
                 </p>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">ESP32</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Blockchain</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">HMAC-SHA256</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Zero Trust</span>
+                </div>
+                <a href="https://github.com/gobinathlp5/Blockchain-Enabled-Zero-Trust-Security-Framework-for-Smart-City-IoT-Infrastructure"
+                   target="_blank"
+                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                  <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
               </div>
             </div>
+
+            <!-- Project 3: Equira -->
             <div class="project-card hidden link-hover" data-category="web">
               <img
-                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&q=80&w=800"
-                alt="Project 2"
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
+                alt="Equira Civic Tech Platform"
                 class="project-image"
                 loading="lazy"
               />
               <div class="project-info">
-                <h3>Project Two Title</h3>
+                <h3>Equira — Civic Tech Platform</h3>
                 <p>
-                  A brief description of the project, the technologies used
-                  (Vue, Firebase), and the problem it solves.
+                  A full-stack web platform improving access to government welfare schemes and
+                  healthcare for underserved communities in India, built with HTML, CSS, JavaScript,
+                  Python, and MongoDB.
                 </p>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Python</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">MongoDB</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">HTML/CSS/JS</span>
+                </div>
+                <a href="https://github.com/gobinathlp5/Equira"
+                   target="_blank"
+                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                  <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
               </div>
             </div>
-            <div class="project-card hidden link-hover" data-category="web">
+
+            <!-- Project 4: IoT Mining Project -->
+            <div class="project-card hidden link-hover" data-category="embedded">
               <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&q=80&w=800"
-                alt="Project 3"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
+                alt="IoT Mining Project"
                 class="project-image"
                 loading="lazy"
               />
               <div class="project-info">
-                <h3>Project Three Title</h3>
+                <h3>IoT Mining Safety System</h3>
                 <p>
-                  A brief description of the project, the technologies used
-                  (HTML, CSS, JS), and the problem it solves.
+                  An IoT-based safety and monitoring system designed for mining environments,
+                  enabling real-time hazard detection and remote monitoring using embedded
+                  sensors and wireless communication.
                 </p>
+                <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">IoT</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Embedded C</span>
+                  <span style="background:var(--primary-color);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Sensors</span>
+                </div>
+                <a href="https://github.com/gobinathlp5/IoT-Mining-Project"
+                   target="_blank"
+                   style="display:inline-block;margin-top:1rem;font-size:0.9rem;color:var(--primary-color);font-weight:600;text-decoration:none;">
+                  <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
               </div>
             </div>
+
+            <!-- Project 5: Fibonacci Module (FPGA/Verilog) -->
+           
+
           </div>
         </div>
       </section>
@@ -178,51 +251,31 @@
               <div class="skill-item">
                 <span class="skill-item-name">Embedded C</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Arduino</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Raspberry Pi & IoT</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">PCB Design</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">CAN Bus</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -233,31 +286,25 @@
               <div class="skill-item">
                 <span class="skill-item-name">C/C++</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Python</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">JavaScript</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item-name">Verilog HDL</span>
+                <div class="skill-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -268,21 +315,19 @@
               <div class="skill-item">
                 <span class="skill-item-name">HTML & CSS</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Git & GitHub</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item-name">MongoDB</span>
+                <div class="skill-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -299,41 +344,25 @@
               <div class="skill-item">
                 <span class="skill-item-name">Team Collaboration</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Problem Solving</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Communication</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
               <div class="skill-item">
                 <span class="skill-item-name">Adaptability</span>
                 <div class="skill-rating">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
               </div>
             </div>
@@ -349,8 +378,8 @@
               <div class="achievement-icon">🏆</div>
               <h3>First Place Hackathon</h3>
               <p>
-                Won the top prize at the DAKSHA-T25 Coding and debugging event
-                conducted by KSR College Of Engineering And Technology
+                Won the top prize at the DAKSHA-T25 Coding and Debugging event
+                conducted by KSR College of Engineering and Technology.
               </p>
             </div>
             <div class="achievement-card hidden link-hover">
@@ -372,6 +401,7 @@
           </div>
         </div>
       </section>
+
       <section id="contact">
         <div class="container">
           <h2 class="hidden">Get In Touch</h2>
